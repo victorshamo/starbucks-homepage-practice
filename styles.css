@@ -29,6 +29,10 @@ p {
     line-height: 1.7;
 }
 
+img {
+    max-width: 100%;
+}
+
 section a {
     color: #fff;
 }
@@ -110,6 +114,38 @@ section a {
     margin: 0 auto;
 }
 
+.box-text {
+    max-width: 500px;
+    text-align: center;
+    justify-self: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.box-text .btn {
+    margin-top: 20px;
+}
+
+.box-f .box-text {
+    /* to make them match their height */
+    max-width: 600px;
+}
+
+/* Grid styles */
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.grid-reversed :first-child {
+    /* first-child wil be the img */
+    order: 2;
+}
+
 /* Buttons */
 .btn {
     cursor: pointer;
@@ -128,7 +164,8 @@ section a {
     color: #000;
 }
 
-.btn-dark-outline:hover {
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
     background-color: rgba(0, 0, 0, 0.06);
 }
 
