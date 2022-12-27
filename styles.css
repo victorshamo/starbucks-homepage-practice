@@ -276,7 +276,29 @@ section a {
     padding: 40px 0;
 }
 
+@media(max-width: 768px) {
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
 
+    .grid-reversed :first-child {
+        order: 0;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar .navbar-nav-left,
+    .navbar .navbar-nav-right {
+        display: none;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
 
 @media(max-width: 960px) {
     .text-xl {
