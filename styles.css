@@ -286,6 +286,7 @@ section a {
     border: none;
     z-index: 10;
     transition: all 0.25s;
+    display: none;
 }
 
 .hamburguer-top,
@@ -309,10 +310,27 @@ section a {
     transform: translateY(14px);
 }
 
+.open .hamburguer-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburguer-middle {
+    display: none;
+}
+
+.open .hamburguer-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+
 
 
 
 @media(max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
     .grid-col-2 {
         grid-template-columns: 1fr;
     }
